@@ -5,10 +5,6 @@
 
 			// Returns the flattr.com thing URL for the given URL.
 			function convertToThingUrl(url) {
-				// Remove any trailing slash, just like Flattr likes it
-				if (url.charAt(url.length-1) == '/') {
-					url = url.slice(0, url.length-1);
-				}
 				return 'https://flattr.com/thing/' + hex_md5(url);
 			}
 
